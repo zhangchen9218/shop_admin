@@ -1,0 +1,41 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Other
+ * Date: 2019/9/3
+ * Time: 13:49
+ */
+//草稿
+define("ARTICLE_STATE_DRAFT",1);
+define("ARTICLE_STATE_DRAFT_STR","草稿");
+//待审核
+define("ARTICLE_STATE_AUDIT",2);
+define("ARTICLE_STATE_AUDIT_STR","待审核");
+//已发布
+define("ARTICLE_STATE_PUBLISH",3);
+define("ARTICLE_STATE_PUBLISH_STR","已发布");
+//下架
+define("ARTICLE_STATE_UNSHELVE",4);
+define("ARTICLE_STATE_UNSHELVE_STR","已下架");
+//未通过
+define("ARTICLE_STATE_FAIL",5);
+define("ARTICLE_STATE_FAIL_STR","未通过");
+
+define("ARTICLE_STATE" , [
+    ARTICLE_STATE_DRAFT => ARTICLE_STATE_DRAFT_STR,
+    ARTICLE_STATE_AUDIT => ARTICLE_STATE_AUDIT_STR,
+    ARTICLE_STATE_PUBLISH => ARTICLE_STATE_PUBLISH_STR,
+    ARTICLE_STATE_UNSHELVE => ARTICLE_STATE_UNSHELVE_STR,
+    ARTICLE_STATE_FAIL => ARTICLE_STATE_FAIL_STR
+]);
+
+
+//资讯详情默认模板
+define("ARTICLE_DEFAULT_SHOW_VIEW","article.article_default_show");
+
+
+
+//资讯分类状态
+
+define("ARTICLE_CATEGORY_START", 1);
+define("ARTICLE_CATEGORY_STOP", 0);

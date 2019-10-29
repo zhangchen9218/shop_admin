@@ -1,0 +1,1 @@
+我是一号模板：{{$articleInfo->title}}

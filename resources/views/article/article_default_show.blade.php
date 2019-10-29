@@ -1,0 +1,1 @@
+{{$articleInfo->title}}
