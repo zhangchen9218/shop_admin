@@ -29,8 +29,8 @@ class LoginCheckRequest extends FormRequest
     public function rules()
     {
         return [
-            "account" => "required|min:8|max:20",
-            "password" => "required|min:8|max:20",
+            "account" => "required|max:20",
+            "password" => "required|max:20",
             "captcha" => "required|captcha"
         ];
     }

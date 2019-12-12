@@ -54,7 +54,7 @@
 				{{--</ul>--}}
 			{{--</dd>--}}
 		{{--</dl>--}}
-		@if(Assist::checkRoutePower("admin","",true))
+		@if(Assist::checkRoutePower("user","",true))
 		<dl id="menu-member">
 			<dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
@@ -72,7 +72,7 @@
 			</dd>
 		</dl>
 		@endif
-		@if(Assist::checkRoutePower("admin","",true))
+		@if(Assist::checkRoutePower("adn","",true))
 		<dl id="menu-admin">
 			<dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
