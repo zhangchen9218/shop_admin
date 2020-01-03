@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Category;
+use App\Model\Category;
 use App\Events\AdminBackgroundLog;
 use App\Http\Requests\CategoryRequest;
 use Illuminate\Http\Request;
@@ -58,7 +58,7 @@ class CategoryController extends BaseController
     /**
      * Display the specified resource.
      *
-     * @param  \App\Category  $category
+     * @param  \App\Model\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function show(Category $category)
@@ -80,7 +80,7 @@ class CategoryController extends BaseController
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Category  $category
+     * @param  \App\Model\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function update(CategoryRequest $request, Category $category)
@@ -98,7 +98,7 @@ class CategoryController extends BaseController
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Category  $category
+     * @param  \App\Model\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request)

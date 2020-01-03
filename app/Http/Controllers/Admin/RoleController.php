@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Events\AdminBackgroundLog;
 use App\Http\Requests\RoleRequest;
-use App\Power;
-use App\Role;
+use App\Model\Power;
+use App\Model\Role;
 use Illuminate\Http\Request;
 
 class RoleController extends BaseController

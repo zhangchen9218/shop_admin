@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests;
 
-use App\Admin;
-use App\Power;
-use App\Role;
+use App\Model\Admin;
+use App\Model\Power;
+use App\Model\Role;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;

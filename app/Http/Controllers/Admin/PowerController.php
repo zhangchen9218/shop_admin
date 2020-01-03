@@ -4,8 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Events\AdminBackgroundLog;
 use App\Http\Requests\PowerRequest;
-use App\Power;
-use http\Env\Response;
+use App\Model\Power;
 use Illuminate\Http\Request;
 
 class PowerController extends BaseController

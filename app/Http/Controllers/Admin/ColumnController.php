@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\ColTemplate;
-use App\Column;
+use App\Model\ColTemplate;
+use App\Model\Column;
 use App\Events\AdminBackgroundLog;
 use App\Http\Requests\ColumnRequest;
 use App\Packages\ColumnPackage\Facade\Column as FColumn;
-use App\Seo;
+use App\Model\Seo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
@@ -101,8 +101,7 @@ class ColumnController extends BaseController
     /**
      * Display the specified resource.
      *
-     * @param  \App\Column  $column
-     * @return \Illuminate\Http\Response
+     * @param  \App\Model\Column  $column
      */
     public function show(Column $column)
     {
@@ -112,7 +111,7 @@ class ColumnController extends BaseController
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Column  $column
+     * @param  \App\Model\Column  $column
      * @return \Illuminate\Http\Response
      */
     public function edit(Column $column)

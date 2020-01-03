@@ -17,7 +17,7 @@ class CreateAdminActionLogsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('admin_id');
             $table->string('route',191);
-            $table->string('param',191)->nullable();
+            $table->text('param')->nullable();
             $table->string('describe',190)->nullable();
             $table->timestamps();
         });

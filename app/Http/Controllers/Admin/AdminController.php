@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Admin;
+use App\Model\Admin;
 use App\Events\AdminBackgroundLog;
 use App\Http\Requests\AdminRequest;
-use App\Role;
+use App\Model\Role;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -70,7 +70,7 @@ class AdminController extends BaseController
     /**
      * Display the specified resource.
      *
-     * @param  \App\Admin  $admin
+     * @param  \App\Model\Admin  $admin
      * @return \Illuminate\Http\Response
      */
     public function show(Admin $admin)
@@ -94,7 +94,7 @@ class AdminController extends BaseController
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Admin  $admin
+     * @param  \App\Model\Admin  $admin
      * @return \Illuminate\Http\Response
      */
     public function update(AdminRequest $request, $id)
@@ -125,7 +125,7 @@ class AdminController extends BaseController
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Admin  $admin
+     * @param  \App\Model\Admin  $admin
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request)

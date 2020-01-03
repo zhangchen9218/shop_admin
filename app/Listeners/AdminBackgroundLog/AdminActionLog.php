@@ -5,7 +5,7 @@ namespace App\Listeners\AdminBackgroundLog;
 use App\Events\AdminBackgroundLog;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use App\AdminActionLog as ALog;
+use App\Model\AdminActionLog as ALog;
 
 class AdminActionLog
 {

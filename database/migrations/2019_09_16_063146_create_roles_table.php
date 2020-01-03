@@ -17,7 +17,7 @@ class CreateRolesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name', 100); 
             $table->string('describe', 200 );
-            $table->string("power_ids" , 200);
+            $table->text("power_ids" );
             $table->timestamps();
         });
     }

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Category;
-use App\Article;
-use App\Column;
+use App\Model\Category;
+use App\Model\Article;
+use App\Model\Column;
 use App\Events\AdminBackgroundLog;
 use App\Http\Requests\ArticleRequest;
 use App\Packages\ColumnPackage\Facade\Column as FColumn;
@@ -88,7 +88,7 @@ class ArticleController extends BaseController
     /**
      * Display the specified resource.
      *
-     * @param  \App\Article  $article
+     * @param  \App\Model\Article  $article
      * @return \Illuminate\Http\Response
      */
     public function show(Article $article)
@@ -119,7 +119,7 @@ class ArticleController extends BaseController
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Article  $article
+     * @param  \App\Model\Article  $article
      * @return \Illuminate\Http\Response
      */
     public function update(ArticleRequest $request, Article $article)

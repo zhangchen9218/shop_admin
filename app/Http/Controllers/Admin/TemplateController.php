@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Events\AdminBackgroundLog;
 use App\Http\Requests\TemplateRequest;
-use App\Template;
+use App\Model\Template;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -60,7 +60,7 @@ class TemplateController extends BaseController
     /**
      * Display the specified resource.
      *
-     * @param  \App\Template $template
+     * @param  \App\Model\Template $template
      * @return \Illuminate\Http\Response
      */
     public function show(Template $template)
@@ -73,7 +73,7 @@ class TemplateController extends BaseController
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Template $template
+     * @param  \App\Model\Template $template
      * @return \Illuminate\Http\Response
      */
     public function edit(Template $template)
@@ -85,7 +85,7 @@ class TemplateController extends BaseController
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Template $template
+     * @param  \App\Model\Template $template
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Template $template)
@@ -111,7 +111,7 @@ class TemplateController extends BaseController
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Template $template
+     * @param  \App\Model\Template $template
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request)
