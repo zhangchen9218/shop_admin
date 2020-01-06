@@ -45,4 +45,13 @@ class User extends Authenticatable
 //    {
 //        return $this->hasMany(Article::class,"verifier_id");
 //    }
+
+    public function getSexAttribute($sex){
+
+        return $sex == 1 ? '男' : '女';
+    }
+
+    public function getStateAttribute($state){
+        return $state == 1 ? '有效' : '停用';
+    }
 }
