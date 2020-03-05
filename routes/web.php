@@ -58,3 +58,4 @@ Route::middleware(['check.admin.login','check.admin.power'])->prefix('admin')->g
     Route::resource("user","Admin\UserController");
 
 });
+Route::post("admin/user/getCityAreas/{id}","Admin\UserController@getCityAreas")->name('user.getCityAreas');

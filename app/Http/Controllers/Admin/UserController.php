@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Model\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
 class UserController extends Controller
 {
     /**
@@ -26,7 +25,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $provinces = provinces();
+        return view('admin.member_add',['provinces'=>$provinces]);
     }
 
     /**
@@ -37,7 +37,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
     }
 
     /**
@@ -83,5 +83,9 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getCityAreas($id){
+        return cityAreas($id);
     }
 }
