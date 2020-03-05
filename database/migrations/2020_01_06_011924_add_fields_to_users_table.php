@@ -14,6 +14,7 @@ class AddFieldsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
+            $table->unsignedBigInteger('avatar_id')->comment('头像附件id')->after('password')->nullable();
             $table->boolean("sex")->comment('性别')->after('password')->nullable();
             $table->string('phone', 11)->comment("电话")->after('sex')->nullable();
             $table->string('address')->comment('地址')->after('phone')->nullable();
@@ -29,7 +30,7 @@ class AddFieldsToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn(['sex', 'phone', 'address','state']);
+            $table->dropColumn(['sex', 'phone', 'address','state','avatar_id']);
         });
     }
 }

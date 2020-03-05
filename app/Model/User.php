@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','sex','phone','address','state','avatar_id'
     ];
 
     /**
@@ -53,5 +53,12 @@ class User extends Authenticatable
 
     public function getStateAttribute($state){
         return $state == 1 ? '有效' : '停用';
+    }
+
+    public function getAvatarIdAttribute($avatarId){
+        if(!$avatarId){
+            return null;
+        }
+        return Resource::find($avatarId)->path;
     }
 }
